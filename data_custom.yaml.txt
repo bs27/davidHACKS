@@ -1,0 +1,6 @@
+train: C:\Users\bjsot\OneDrive\Desktop\yolov8_custom\train
+val: C:\Users\bjsot\OneDrive\Desktop\yolov8_custom\val
+
+nc: 3
+
+names: ["jacket", "pants", "shoes"]
