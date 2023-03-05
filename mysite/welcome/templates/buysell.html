@@ -1,0 +1,40 @@
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="{% static 'mysite\css\butsell.css' %}">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fjalla+One&display=swap" rel="stylesheet">
+</head>
+<body>
+    
+    <div class="container">
+        <div class="lefttop">
+            <img class="img1" src="{% static 'mysite\img\grayhoodie.png' %}" alt="gray_hoodie">
+        </div>
+        <div class="righttop">
+            <img class="img2" src="{% static 'mysite\img\greenshirt.png' %}" alt="green_shirt">
+        </div>
+        <div class="interaction">
+            <h1>We Provide a ecofriendly way of Thrift Shopping</h1>
+            <h3>focusing on reducing CO2 emission from traveling with vehicle and reducing cloth production</h3>
+            <br><br>
+            <div>
+                <a class="BSaref" href="http://127.0.0.1:8000/welcome/buy"><button class="BSbutton">BUY</button></a>
+                <a class="BSaref" href="http://127.0.0.1:8000/welcome/sell"><button class="BSbutton">SELL</button></a>
+            </div>
+        </div>
+        <div class="leftbot">
+            <img class="img3" src="{% static 'mysite\img\black_gray_pants.png' %}" alt="black_gray_pants">
+        </div>
+        <div class="rightbot">
+            <img class="img4" src="{% static 'mysite\img\navysweater.png' %}" alt="navysweater">
+        </div>
+        
+    </div>
+</body>
+</html>

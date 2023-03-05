@@ -1,0 +1,64 @@
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #ttp{
+            background-image: url({% static 'mysite/img/squareUI.png' %});
+            background-size: cover; /* or contain, depending on your needs */
+            background-position: center;
+        }
+
+        .container {
+            margin: 0 auto;
+
+            width: 100%;
+            max-width: 720px;
+            min-height: 100vh;
+
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+        }
+
+        @keyframes spin {
+            from {
+                transform: rotate(0deg);
+            }
+            to {
+                transform: rotate(360deg);
+            }
+        }
+
+        /* Spinner */
+        .spinner {
+            --spinner-color: black;
+
+            aspect-ratio: 1/1;
+            border-radius: 50%;
+
+            animation-name: spin;
+            animation-iteration-count: infinite;
+            animation-timing-function: linear;
+        }
+
+        .spinner--quarter {
+            width: 48px;
+            border: 5px solid var(--spinner-color);
+            border-top-color: transparent;
+
+            animation-duration: 1s;
+        }
+
+
+    </style>
+    <script src="{% static 'mysite/js/taptopay.js' %}"></script>
+</head>
+<body>
+    <div id="ttp" style="height:100vh; width:100vw;"></div>
+    
+</body>
+</html>

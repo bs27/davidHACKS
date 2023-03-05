@@ -1,0 +1,52 @@
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .claimbutton:hover{
+            box-shadow: 0 0 10px black;
+        }
+        body{
+            background: linear-gradient(352deg, #003e19, #9edd94, #4a7d41);
+            background-size: 600% 600%;
+
+            -webkit-animation: AnimationName 59s ease infinite;
+            -moz-animation: AnimationName 59s ease infinite;
+            animation: AnimationName 59s ease infinite;            
+        }
+        @-webkit-keyframes AnimationName {
+            0%{background-position:0% 60%}
+            50%{background-position:100% 41%}
+            100%{background-position:0% 60%}
+        }
+        @-moz-keyframes AnimationName {
+            0%{background-position:0% 60%}
+            50%{background-position:100% 41%}
+            100%{background-position:0% 60%}
+        }
+        @keyframes AnimationName {
+            0%{background-position:0% 60%}
+            50%{background-position:100% 41%}
+            100%{background-position:0% 60%}
+        }
+    </style>
+    <script>
+        function claimed(){
+            window.location.href="http://127.0.0.1:8000/welcome/thanks";
+        }
+    </script>
+</head>
+<body style="text-align: center;">
+    <div style="background-color: whitesmoke;display: flex;flex-direction: column;align-items: center;justify-content: center;height: 97vh;width: 40%;margin:auto;border-radius: 20px;border: 1px solid;">
+        <img style="max-width: 30%; border-radius: 15px;" src="DummyLogo.jpeg" alt="">
+        <h1 style="font-size: 58px;">Trift AM</h1>
+        <h1 style="font-size:45px;">$15.00</h1>
+        <h5 style="font-size: 20px;">Offer for your Cloth</h5>
+        <h1 class="claimbutton" onclick="claimed()" style="display: inline; background-color: rgb(24, 23, 23);color: whitesmoke; border-radius: 15px; padding: 20px;font-size: 30px; font-size: 40px;">Claim $15.00</h1>
+    </div>
+    
+</body>
+</html>

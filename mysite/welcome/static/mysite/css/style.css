@@ -1,0 +1,55 @@
+
+body{
+    background-image: url("\indexbackground.png");
+    background-size: cover;
+    padding: 2rem 2rem 2rem 2rem;
+
+    background-position: center;
+    height: 90vh;
+}
+.mainscr{
+    font-family: 'Fjalla One', sans-serif;
+    font-size: 42px;
+    width: 50%;
+
+    margin: 22% auto 27% 14%;
+
+    grid-column-start: 1;
+    grid-column-end: 2;
+}
+.c2{
+    grid-column-start: 2;
+    grid-column-end: 3;
+    
+    border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
+}
+.welcomemsg1{
+    margin: 0 auto;
+}
+.welcomemsg2{
+    margin: 0 auto;
+    text-shadow: 0 0 30px #3f6f36;
+}
+.ttbbutton{
+    border-radius: 10px;
+    background-color: #e4ffb0;
+    padding: 10px;
+    display: inline;
+}
+
+.container{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+}
+#thumbnail{
+    width: 65%;
+    display: block;
+    margin: 7% auto 0 auto;
+    border-top-left-radius: 260px;
+    border-top-right-radius: 260px;
+    border-bottom-left-radius: 40px;
+    border-bottom-right-radius: 40px;
+    box-shadow: 20px 20px 0px #fff9f966;
+}

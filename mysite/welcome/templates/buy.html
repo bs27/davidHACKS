@@ -1,0 +1,73 @@
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'mysite\css\buy.css' %}">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fjalla+One&display=swap" rel="stylesheet">
+    <script src="{% static 'mysite\js\buy.js' %}"></script>
+</head>
+<body>
+    <div style="display: flex;align-items: center;">
+        <h1 style="text-align: center; font-size: 64px;width: 100vw;"><b>AVAILABLE ITEMS</b></h1>
+        <svg class="addcartbutton" onclick="addtocart()" xmlns="http://www.w3.org/2000/svg" width="48" height="48" fill="currentColor" class="bi bi-cart3" viewBox="0 0 16 16">
+            <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .49.598l-1 5a.5.5 0 0 1-.465.401l-9.397.472L4.415 11H13a.5.5 0 0 1 0 1H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM3.102 4l.84 4.479 9.144-.459L13.89 4H3.102zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z"/>
+        </svg>
+    </div>
+    <div class="container">
+        <img class="prodimg" src="{% static 'mysite\img\greenshirt.png' %}" alt="product_image">
+        <div class="info">
+            <h1>Green Shirt</h1>
+            <h3 style="margin-top: 0;">$8</h3>
+            <div class="category">
+                <li class="catlist">Shirt</li>
+            </div>
+            <h5 style="margin-bottom: 0px;">Size: Medium</h5>
+            <p style="margin-top: 10px;"> This cool dark green shirt with a soft and luxurious fabric that will keep you comfortable all day long. The deep green color adds a touch of sophistication and style to any outfit, making it a must-have for any fashion-forward individual. Condition is almost new.</p>
+        </div>
+        <div class="buttons">
+           <button class="but2" onclick="changebut(this)">Add to Cart</button>
+            <br>
+            <a class="buttons_in" href="http://127.0.0.1:8000/welcome/tryon"><button onclick="temphold(this)" class="but2">TRY ON</button></a>
+        </div>
+    </div>
+    <div class="container">
+        <img class="prodimg" src="{% static 'mysite\img\grayhoodie.png' %}" alt="product_image">
+        <div class="info">
+            <h1>Gray Hoodie</h1>
+            <h3 style="margin-top: 0;">$15</h3>
+            <div class="category">
+                <li class="catlist">Hoodie</li>
+            </div>
+            <h5 style="margin-bottom: 0px;">Size: Medium</h5>
+            <p style="margin-top: 10px;">This great gray hoodie at your has a comfortable fabric and timeless style, this hoodie will keep you warm and fashionable all winter long.</p>
+        </div>
+        <div class="buttons">
+           <button class="but2" onclick="changebut(this)">Add to Cart</button>
+            <br>
+            <a class="buttons_in" href="http://127.0.0.1:8000/welcome/tryon"><button onclick="temphold(this)" class="but2">TRY ON</button></a>
+        </div>
+    </div>
+    <div class="container">
+        <img class="prodimg" src="{% static 'mysite\img\navysweater.png' %}" alt="product_image">
+        <div class="info">
+            <h1>Navy Sweater</h1>
+            <h3 style="margin-top: 0;">$15</h3>
+            <div class="category">
+                <li class="catlist">Sweater</li>
+            </div>
+            <h5 style="margin-bottom: 0px;">Size: Medium</h5>
+            <p style="margin-top: 10px;">The rich, deep color and classic design make it a versatile piece that can be dressed up or down for any occasion.</p>
+        </div>
+        <div class="buttons">
+           <button class="but2" onclick="changebut(this)">Add to Cart</button>
+            <br>
+            <a class="buttons_in" href="http://127.0.0.1:8000/welcome/tryon"><button onclick="temphold(this)" class="but2">TRY ON</button></a>
+        </div>
+    </div>
+</body>
+</html>

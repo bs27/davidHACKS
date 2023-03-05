@@ -1,0 +1,45 @@
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="{% static 'mysite/css/payment.css' %}">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fjalla+One&display=swap" rel="stylesheet">
+    <script src="{% static 'mysite/js/payment.js' %}" defer></script>
+    <style>
+        body{
+            font-family: 'Fjalla One', sans-serif;
+            margin: 0;
+            padding: 0;
+            height: 100vh;
+            background-color: #faf9f9;
+            /* #e4e4e4 */
+        }
+        #buybutton{
+            display: flex;
+            justify-content: space-around;
+            width: 200px;
+            background: #6fae40;
+            border-radius: 30px;
+            margin: 0 auto;
+        }
+        #pay{
+            background-color: white;
+            padding: 5px;
+            color: #6fae40;
+            border-radius: 15px;
+        }
+        #price{
+            margin: auto 0;
+            color: white;
+        }
+    </style>
+</head>
+<body id="body">
+    <h1 style="text-align: center; font-size: 64px;">Payment page</h1>
+</body>
+</html>

@@ -1,0 +1,78 @@
+body{
+    font-family: 'Fjalla One', sans-serif;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    background-color: #faf9f9;
+    /* #e4e4e4 */
+}
+.container{
+    display: grid;
+    grid-template-columns: 250px 1fr 250px;
+    grid-template-rows: 1fr;
+    width: 80%;
+    margin: 0 auto 20px auto;
+    border: 1px solid black;
+    border-radius: 30px;
+    background-color: #dcde9f;
+}
+.prodimg{
+    grid-column-start: 1;
+    grid-column-end: 2;
+    max-width: 100%;
+    border-radius: 30px;
+    padding: 10px;
+}
+.info{
+    margin: 0 30px;
+    grid-column-start: 2;
+    grid-column-end: 3;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.buttons{
+    grid-column-start: 3;
+    grid-column-end: 4;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.buttons button{
+    border-radius: 10px;
+    background-color: #6fae40;
+    padding: 10px;
+    border: 0px;
+    font-size: 18px;
+    font-family: sans-serif;
+    display: inline;
+    margin: 0 20px;
+}
+.buttons a{
+    text-decoration: none;
+    margin: 0 auto;
+}
+.but2:hover{
+    box-shadow: 0 0 10px #33463c;
+    transition: box-shadow 0.3s ease-in-out;
+}
+.category{
+    display: flex;
+}
+.catlist{
+    margin-right: 20px;
+}
+
+.addcartbutton{
+    margin-left: -250px;
+    background-color: #6fae40;
+    padding: 10px;
+    border-radius: 10px;
+    transform: scale(1);
+    transition: transform 0.4s ease;
+}
+.addcartbutton:hover{
+    transform: scale(1.1);
+}
